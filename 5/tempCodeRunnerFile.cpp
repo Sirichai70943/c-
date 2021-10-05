@@ -1,0 +1,1 @@
+ cout << "\nNow find 's' in Str3" << endl;
