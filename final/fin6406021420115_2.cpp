@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-void insertnum(int X[], int num);
 int main()
 {   
     int num;
@@ -9,12 +8,11 @@ int main()
     cout << "How many numbers in array A : ";
     cin >> num;
 
-    int A[num];
+    int A[num+1];
     cout << "Enter " << num << " integers for array A : ";
     for(int i = 1; i <= num; i++){
         cin >> A[i];
     }
-
 
     E = num - 1;
     while (flag == true)
