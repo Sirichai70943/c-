@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDE</title>
+    <title>INDEX</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css//bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -55,6 +55,48 @@
                     <i class="fas fa-user"></i>
                     <strong>User</strong>
                 </a>
+                 <!-- Modal Payment -->
+                <div class="modal fade" id="mypay">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal pay -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Payment</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                                            xmlns="#" role="img" aria-label="Placeholder: Thumbnail" 
+                                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <title>Placeholder</title><rect width="100%" 
+                                            height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy="0.3em">QR code</text>
+                                        </svg>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                Name Product : <br>
+                                                Details : <br>
+                                                Price :
+                                            </p>
+                                            <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <label for="pay">Proof of payment </label>
+                                                <input type="file" name="pay" id="pay">
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-outline-success">Confirm </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                  <!-- Modal Login -->
                 <div class="modal fade" id="myModal">
                     <div class="modal-dialog">
@@ -77,16 +119,22 @@
                                         <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
                                         <label for="floatingPassword">Password</label>
                                     </div>
-                                    
-                                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">
-                                        <a class="btn-login" href="index.html">Sign up</a>
-                                    </button>
+
+                                    <a class="btn-login" href="index.html">
+                                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">
+                                            Sign up
+                                        </button>
+                                    </a>
                                     
                                     <hr class="my-4">
                                     <h2 class="fs-5 fw-bold mb-3">If you don't have an account?</h2>
-                                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-success" type="submit">
-                                        <a class="btn-login" href="#" data-bs-toggle="modal" data-bs-target="#myregister">Register</a>
-                                    </button>
+                                    
+                                    <a class="btn-login" href="#" data-bs-toggle="modal" data-bs-target="#myregister">
+                                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-success" type="submit" >
+                                            Register
+                                        </button>
+                                    </a>
+
                                 </form>
                             </div>
                         </div>
@@ -122,55 +170,13 @@
                                         <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
                                         <label for="floatingInput">Last Name</label>
                                     </div>
-                                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-success" type="submit">
-                                        <a class="btn-login" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Register</a>
-                                    </button>
-                                  </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Modal Payment -->
-                <div class="modal fade" id="mypay">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                    
-                            <!-- Modal pay -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Payment</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                    
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                <div class="col">
-                                    <div class="card shadow-sm">
-                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" 
-                                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" 
-                                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                                            <title>Placeholder</title><rect width="100%" 
-                                            height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">QR code</text>
-                                        </svg>
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                Name Product : <br>
-                                                Details : <br>
-                                                Price :
-                                            </p>
-                                            <hr>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <label for="pay">Proof of payment </label>
-                                                <input type="file" name="pay" id="pay">
-                                            </div>
-                                            <button type="button" class="btn btn-sm btn-outline-success">Confirm </button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <a class="btn-login" href="#" data-bs-toggle="modal" data-bs-target="#myModal">
+                                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-success" type="submit">
+                                            Register
+                                        </button>
+                                    </a>
 
-
-
+                                </form>
                             </div>
                         </div>
                     </div>
