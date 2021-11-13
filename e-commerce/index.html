@@ -4,14 +4,627 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEx</title>
+    <title>INDE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css//bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="overlay">
-            
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Shop</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="pay.html" class="btn-login"  data-bs-toggle="modal" data-bs-target="#mypay">
+                                <i class="fas fa-shopping-cart"></i> Payment</a></li>
+                            <li><a href="#about" class="btn-login">
+                                <i class="fas fa-users"></i> About</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Product</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#notebook" class="btn-login">
+                                    <i class="fas fa-laptop"></i> 
+                                    Note Book
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#keyboard" class="btn-login">
+                                    <i class="far fa-keyboard"></i> 
+                                    Keyboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#mouse" class="btn-login">
+                                    <i class="fas fa-mouse"></i> 
+                                    Mouse
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <i class="fas fa-user"></i>
+                    <strong>User</strong>
+                </a>
+                 <!-- Modal Login -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Login -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Sign up</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form class="">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    
+                                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">
+                                        <a class="btn-login" href="index.html">Sign up</a>
+                                    </button>
+                                    
+                                    <hr class="my-4">
+                                    <h2 class="fs-5 fw-bold mb-3">If you don't have an account?</h2>
+                                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-success" type="submit">
+                                        <a class="btn-login" href="#" data-bs-toggle="modal" data-bs-target="#myregister">Register</a>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Modal Register -->
+                <div class="modal fade" id="myregister">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Register -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Register</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form class="">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Fristname</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Last Name</label>
+                                    </div>
+                                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-success" type="submit">
+                                        <a class="btn-login" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Register</a>
+                                    </button>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Modal Payment -->
+                <div class="modal fade" id="mypay">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal pay -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Payment</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" 
+                                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" 
+                                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <title>Placeholder</title><rect width="100%" 
+                                            height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">QR code</text>
+                                        </svg>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                Name Product : <br>
+                                                Details : <br>
+                                                Price :
+                                            </p>
+                                            <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <label for="pay">Proof of payment </label>
+                                                <input type="file" name="pay" id="pay">
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-outline-success">Confirm </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
     </header>
-</body>
+      
+    <main>
+      
+    <section class="py-5 text-center container" id="notebook">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light"><b>Note Book</b></h1>
+            </div>
+        </div>
+    </section>
+      
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/note1.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/note2.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/note3.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/note3.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/note1.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/note2.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <section class="py-5 text-center container" id="keyboard">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light"><b>Keyboard</b></h1>
+            </div>
+        </div>
+    </section>
+      
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/key1.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/key2.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/key3.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/key3.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/key1.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/key2.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 text-center container" id="mouse">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light"><b>Mouse</b></h1>
+            </div>
+        </div>
+    </section>
+      
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/m1.png">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/m2.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/m3.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/m3.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/m1.png">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="img/m2.jpg">
+                        <hr>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Name Product : <br>
+                                Details : <br>
+                                Price :
+                            </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> + </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> 1 </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"> - </button>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success"> Buy now. </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+      
+    <div class="container" id="about">
+        <footer class="py-3 my-4">
+            <h1 class="text-center text-primary">About</h1>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <a href="#"><i class="fab fa-facebook about-icon">|</i></a>
+                <a href="#"><i class="fab fa-twitter about-icon">|</i></a>
+                <a href="#"><i class="fab fa-instagram about-icon"></i></a>
+            </ul>
+            <p class="text-center text-muted">&copy; 2021 Website E-Commerce, Inc</p>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body> 
 </html>

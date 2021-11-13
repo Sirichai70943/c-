@@ -1,0 +1,32 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+i{
+    margin-right: 5px;
+    
+}
+.btn-login{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+li{
+    margin-left: 10px;
+}
+
+.about-icon{
+    font-size: 30px;
+}
